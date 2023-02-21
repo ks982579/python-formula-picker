@@ -28,8 +28,16 @@ My idea is the following:
 - Ensure functions, classes, and methods are properly documented. 
 - optimize and refactor the program for best performance. 
 
+Create a "notebook" branch to practice merging into "main". 
+```bash
+git checkout -b notebook
+```
+
 That brings us to this point. Let's start building the project in a Jupyter Notebook. Create a `main.ipynb` file, and let VisualStudio code download the proper extension. 
 
 ```bash
-pip install numpy pandas scipy
+pip install -U pip
+pip install -U numpy pandas scipy matplotlib seaborn numba
 ```
+
+<b style="color: firebrick">! First issue is that numba cannot be installed on Python 3.11. !</b> [This Github Thread](https://github.com/numba/numba/issues/8304) lists the issues the team is having implementing updates. We will forgo this for now an continue on. 
